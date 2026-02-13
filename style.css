@@ -829,3 +829,220 @@ footer a {
 
 
 }
+
+/* =========================
+GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/* =========================
+CONTAINER
+========================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+HEADER
+========================= */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#navbar {
+    display: flex;
+    gap: 20px;
+}
+#navbar li a {
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#navbar li a:hover {
+    color: #088178;
+}
+
+/* =========================
+HERO SECTION
+========================= */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+/* =========================
+PRODUCT GRID
+========================= */
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.pro {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    background: #fff;
+}
+.pro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+FEATURE GRID
+========================= */
+#feature {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    padding: 40px;
+}
+.fe-box {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* =========================
+BANNER
+========================= */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+}
+
+/* =========================
+FOOTER
+========================= */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background: #f3f3f3;
+}
+
+/* =========================
+TABLET RESPONSIVE
+========================= */
+@media(max-width:991px) {
+    #header {
+        padding: 15px 20px;
+    }
+    
+    #navbar {
+        gap: 15px;
+    }
+    
+    #hero {
+        padding: 40px;
+        min-height: 60vh;
+    }
+    
+    .pro-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #feature {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+@media(max-width:600px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    #navbar li {
+        padding: 10px 0;
+    }
+    
+    #hero {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .pro-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #feature {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* =========================
+LARGE LAPTOP
+========================= */
+@media(min-width:1200px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .pro-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
