@@ -1,0 +1,306 @@
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Global Styles */
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+/* ================= HEADER ================= */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+#navbar li a.active,
+#navbar li a:hover {
+    color: #ff523b;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+#newzletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #041e42;
+    color: white;
+}
+
+#newzletter p {
+    color: #cfd8ff;
+}
+
+#newzletter span {
+    color: #ffbd27;
+}
+
+#newzletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newzletter input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+#newzletter button {
+    padding: 15px 25px;
+    background: #ff523b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .icon i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid#cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.03s ease;
+}
+
+#product1 .pro:hover {
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 3s;*/
+    box-shadow: 3px 3px 3px 3px rgb(83, 71, 71);
+    transition: 0.3s;
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro.des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+    padding: 7px;
+    color: #1a1a1a;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .bt {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #088178;
+}
+
+
+/* Section spacing */
+
+#pagechang {
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+/* Scroll container */
+
+.sclor {
+    width: 100%;
+    overflow-x: auto;
+    /* enable horizontal scroll */
+    display: flex;
+    justify-content: center;
+    /* center pagination */
+}
+
+
+/* Pagination list */
+
+#Scrollable {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/* Page links */
+
+#Scrollable li a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    color: #000;
+    font-size: 14px;
+    flex-shrink: 0;
+    transition: 0.2s ease;
+}
+
+
+/* Hover effect */
+
+#Scrollable li a:hover {
+    background-color: #e5e7eb;
+}
+
+
+/* Active page (Page 1 default) */
+
+#Scrollable li:first-child a {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+
+/* Hide scrollbar (optional, clean look) */
+
+.sclor::-webkit-scrollbar {
+    display: none;
+}
